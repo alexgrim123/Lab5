@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+
+{% block body1 %}
+    <div id="header1">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Выберите свой будущий iPhone</h1>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row centered">
+                {% load static %}
+                <div class="col-lg-4">
+                    <a href="{% url 'prog_lang_url' 1 %}"><img src="{% static "images/57.png" %}" width="400" height="400" alt="iPhone7 image"/></a>
+                    <figcaption>iPhone 7
+                    </figcaption>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{% url 'prog_lang_url' 2 %}"><img src="{% static "images/iPhone8SpGry2up1000-800x800.jpg" %}" width="400" height="400" alt="iPhone8 image"/></a>
+                    <figcaption>iPhone 8
+                    </figcaption>
+                </div>
+                <div class="col-lg-4">
+                    <a href="{% url 'prog_lang_url' 3 %}"><img src="{% static "images/10.png" %}" width="400" height="400" alt="iPhoneX image"/></a>
+                    <figcaption>iPhone X
+                    </figcaption>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
